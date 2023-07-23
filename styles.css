@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Foldit&family=Righteous&display=swap');
+
+body{
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+    background-color: #EDF1D6;
+    background-image: url(./fondo.jpg);
+    background-size: cover
+}
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo{
+    color: darkgray;
+    font-size: 100px;
+    margin: 20px;
+    font-family: 'Foldit', cursive;
+    
+}
+
+.subtitulo{
+    color: darkgray;
+    font-size: 40px;
+}
+
+.tarjetas, .tarjetas-ataques{
+    display: flex;
+    gap: 20px
+}
+
+.tarjeta-de-mokepon{
+    width: 200px;
+    height: 175px;
+    background: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    color: #40513B;
+    align-content: stretch;
+    justify-content: flex-end;
+}
+
+.tarjeta-de-mokepon img{
+    width: 128px
+}
+
+#boton-mascota{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input{
+    display: none;
+}
+
+input:checked + label {
+    background-color: rgb(62, 231, 234) ;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+#mensajes {
+    width: 500px;
+    padding: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#boton-reiniciar{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    background: transparent;
+    border: 2px solid black;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 75px 75px;
+    justify-items: center;
+}
+
+#vidas-jugador, #vidas-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#mascota-jugador, #mascota-enemigo{
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.ataques-del-jugador, .ataques-del-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button {
+    width: 98px;
+    height: 40px;
+    border-radius: 20px;
+    background: whitesmoke;
+    border: 2px solid black;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px){
+    .tarjetas, .tarjetas-ataques{
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 300px){
+    #ver-mapa div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
